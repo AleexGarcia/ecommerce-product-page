@@ -1,0 +1,48 @@
+.descricao{
+ padding: 1rem 0;
+}
+.descricao__loja{
+    color: var(--orange);
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+   margin-bottom: 1rem;
+}
+.descricao__produto{
+    width: 70%;
+    color: var(--veryDarkBlue);
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+.descricao__caracteristicas{
+    color: var(--darkGrayishBlue);
+    line-height: 1.5;
+    font-size: 15px;
+    margin-bottom: 1.75rem;
+}
+.precos-container{
+    display: flex;
+    align-items: center;
+    padding: 8px;
+   
+}
+.descricao__preco{
+    color: var(--veryDarkBlue);
+    font-weight: 700;
+    font-size: 1.75rem ;
+
+}
+.descricao__desconto{
+    background-color: var(--pale-orange);
+    color: var(--orange);
+    font-weight: 700;
+    padding: 4px 8px;
+    margin-left: 1rem;
+}
+.descricao__precoAnterior{
+    flex-grow: 2;
+   text-align: right;
+   color: var(--darkGrayishBlue);
+   text-decoration: line-through;
+}
