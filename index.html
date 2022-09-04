@@ -7,7 +7,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
     integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/stylus.css">
   <title>Frontend Mentor | E-commerce product page</title>
   <style>
     .attribution {
@@ -22,14 +26,35 @@
 </head>
 
 <body>
- <header>
-  
- </header> 
-  
+  <header class="header">
+    <div class="logo_menu_container">
+      <i class="fa-solid fa-bars header__menu" id="menu"></i>
+      <h1 class="header__title"><img src="images/logo.svg" alt=""></h1>
+    </div>
+    <nav class="header__nav oculto" id="navigation">
+      <div class="links_container">
+        <i class="fa-solid fa-xmark nav__icon" id="close-navigation"></i>
+        <ul class="nav__list ">
+          <li class="nav__item"><a href="#" class="nav__link">Collections</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Men</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Women</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="cart-user-container">
+      <span class="cart-shopping"></span>
+      <div class="header__user"></div>
+    </div>
+  </header>
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://github.com/AleexGarcia">Alexandre Garcia</a>.
   </div>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>

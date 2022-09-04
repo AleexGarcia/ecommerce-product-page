@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+}
 body{
     font-family: var(--familia-fonte);
     font-weight: 400;
     font-size: 1rem;
     color: var(--DarkGrayishBlue);
+    min-height: 100vh;
 }
 .container{
     max-width: 90%;
     margin: 0 auto;
+}
+.oculto{
+    display: none;
 }
