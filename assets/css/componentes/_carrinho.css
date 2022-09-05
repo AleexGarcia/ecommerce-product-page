@@ -9,6 +9,8 @@ main{
     left: 2%;
     background-color: var(--white);
     border-radius: 8px;
+    box-shadow: 0px 5px 8px 0px var(--black);
+    z-index: 6;
 }
 .carrinho__titulo{
     padding: 1rem;
@@ -77,4 +79,13 @@ main{
     font-weight: 700;
     padding: 1.25rem;
     border-radius: 8px;
+}
+.carrinho__span{
+    color: var(--darkGrayishBlue);
+    font-weight: 700;
+    margin-top: 3rem;
+    align-self: center;
+}
+.oculto{
+    display: none;
 }
