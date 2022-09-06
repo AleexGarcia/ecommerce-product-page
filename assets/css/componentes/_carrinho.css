@@ -89,6 +89,13 @@ main{
 .oculto{
     display: none;
 }
+@media screen and (min-width: 767px) {
+    .carrinho{
+        width: 50%;
+        left: auto;
+        right: 5%;
+    }        
+}
 @media screen and (min-width: 1024px) {
     main{
         position: initial;
@@ -96,8 +103,6 @@ main{
     .carrinho{
         min-height: 200px;
         width: 25%;
-        left: auto;
-        right: 5%;
         top: 4.5rem;
     }
 }
