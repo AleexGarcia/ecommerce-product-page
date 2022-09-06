@@ -30,19 +30,20 @@
     <div class="logo_menu_container">
       <i class="fa-solid fa-bars header__menu" id="menu"></i>
       <h1 class="header__title"><img src="images/logo.svg" alt=""></h1>
+      <nav class="header__nav invisivel-mobile" id="navigation">
+        <div class="links_container ">
+          <i class="fa-solid fa-xmark nav__icon" id="close-navigation"></i>
+          <ul class="nav__list ">
+            <li class="nav__item"><a href="#" class="nav__link">Collections</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Men</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Women</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
     </div>
-    <nav class="header__nav oculto" id="navigation">
-      <div class="links_container">
-        <i class="fa-solid fa-xmark nav__icon" id="close-navigation"></i>
-        <ul class="nav__list ">
-          <li class="nav__item"><a href="#" class="nav__link">Collections</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Men</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Women</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+    
 
     <div class="cart-user-container">
       <span class="cart-shopping"></span>
@@ -78,7 +79,7 @@
         <button class="addcart__addButton" type="submit">Add to cart</button>
       </form>
     </section>
-    <section class="carrinho">
+    <section class="carrinho oculto">
       <h3 class="carrinho__titulo">Cart</h3>
       <hr>
       <div class="itens">
