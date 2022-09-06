@@ -83,9 +83,21 @@ main{
 .carrinho__span{
     color: var(--darkGrayishBlue);
     font-weight: 700;
-    margin-top: 3rem;
     align-self: center;
+    margin-top: 30px;
 }
 .oculto{
     display: none;
+}
+@media screen and (min-width: 1024px) {
+    main{
+        position: initial;
+    }
+    .carrinho{
+        min-height: 200px;
+        width: 25%;
+        left: auto;
+        right: 5%;
+        top: 4.5rem;
+    }
 }
