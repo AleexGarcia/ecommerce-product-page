@@ -33,3 +33,25 @@
 .controles__proximo{
     background-image: url(../../../images/icon-next.svg);
 }
+@media screen and (min-width: 1024px) {
+    .controles{
+        display: none;
+    }
+    .banner{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem;
+        background-size: cover;
+       
+    }
+    main{
+        padding: 4rem 0;
+        max-width: 75%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 4rem;
+        
+    }
+}

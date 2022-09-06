@@ -59,3 +59,33 @@
     margin-right: 1rem;
     
 }
+@media screen and (min-width: 1024px) {
+    .addcart{
+        padding-bottom: 0;
+    }
+    .addcart__form{
+        flex-direction: row;
+    }
+    .input-control-container{
+        width: 40%;
+    }
+    .addcart__addButton{
+        width: 60%;
+        padding: 1rem;
+        font-size: 14px;
+    }
+    .addcart__addButton:hover{
+        opacity: .8;
+        cursor: pointer;
+    }
+    .addcart__control{
+        padding: 1rem;
+       
+    
+    }
+    .addcart__control:hover{
+        cursor: pointer;
+        opacity: .8;
+    }
+    
+}

@@ -46,3 +46,26 @@
    color: var(--darkGrayishBlue);
    text-decoration: line-through;
 }
+@media screen and (min-width: 1024px) {
+    .precos-container{
+        display: block;
+    }
+    .descricao__produto{
+        font-size: 2rem;
+        width: 100%;
+    }
+    .descricao__preco{
+        display: inline-block;
+        vertical-align: top;
+    }
+    .descricao__desconto{
+        display: inline-block;
+    
+    }
+    .descricao__precoAnterior{
+        display: block;
+        text-align: left;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
