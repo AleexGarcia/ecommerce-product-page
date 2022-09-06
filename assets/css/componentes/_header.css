@@ -111,4 +111,12 @@
         height: 40px;
         width: 40px;
     }
+    .header__user:hover{
+       
+        border: solid 2px var(--orange);
+        cursor: pointer;
+    }
+    .cart-shopping{
+        cursor: pointer;
+    }
 }

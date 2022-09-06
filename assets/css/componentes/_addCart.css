@@ -7,7 +7,7 @@
    gap: 1rem;
 }
 .input-control-container{
-    border-radius: 32px;
+    border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -21,7 +21,7 @@
     font-weight: 700;
     width: 100%;
     font-size: 1rem;
-    border-radius: 20px;
+    border-radius: 8px;
 }
 .addcart__control{
     padding: 2rem;
