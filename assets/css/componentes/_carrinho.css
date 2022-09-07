@@ -71,6 +71,9 @@ main{
     background-repeat: no-repeat;
     background-position: center;
 }
+.item__remove:hover{
+    cursor: pointer;
+}
 .itens__checkout{
     background-color: var(--orange);
     border: none;
@@ -79,6 +82,9 @@ main{
     font-weight: 700;
     padding: 1.25rem;
     border-radius: 8px;
+}
+.itens__checkout{
+    cursor: pointer;
 }
 .carrinho__span{
     color: var(--darkGrayishBlue);

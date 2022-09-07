@@ -21,14 +21,20 @@ document.getElementById('carrinho-icon').addEventListener('click', () => {
 
 
 var links = [];
-imagensProduto.forEach(imagem => {
-
+imagensProduto.forEach((imagem,index) => {
     links.push(imagem.src.replace(/\-thumbnail/, ''));
-
     imagem.addEventListener('click', e => {
         let link = e.target.src.replace(/\-thumbnail/, '');
         imagemBanner.src = link;
-
+        e.target.classList.add('active-img');
+        e.target.parentNode.classList.add('active-banner');
+       
+        imagensProduto.forEach(img =>{
+            if(img != imagensProduto[index]){
+                img.classList.remove('active-img');
+                img.parentNode.classList.remove('active-banner');
+            }
+        })
     });
 
 });

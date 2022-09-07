@@ -15,6 +15,10 @@
     top: -7.5%;
     right: 1%;
 }
+.lightBox__close:hover{
+    cursor: pointer;
+    opacity: .8;
+}
 .lightBox__close::before{
 
     color: var(--orange);
@@ -42,6 +46,10 @@
     width: 100%;
     left: 5%;
 }
+.lightBox_controle:hover{
+    cursor: pointer;
+   
+}
 .lightBox_controle{
     background-color: var(--white);
     height: 2.5rem;
@@ -65,13 +73,28 @@
    justify-items: center;
 }
 .lightBox__item{
+   
     width: 66%;
+    background-color: var(--white);
+    border-radius: 12px;
 }
 .lightBox__thumbnail{
     width: 100%;
+    height: 100%;
+    border-radius: 8px;
     
-    border-radius: 20px;
+}
+.lightBox__thumbnail:hover{
+    cursor: pointer;
+    opacity: .6;
 }
 .ocultar-lightbox{
     display: none;
+}
+.active-item{
+    border: 3px solid var(--orange);
+}
+.active-image{
+    opacity: .3;
+    
 }

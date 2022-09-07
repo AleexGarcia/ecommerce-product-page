@@ -22,11 +22,20 @@ proximoLightBox.addEventListener('click', () => {
         }
     }
 })
-
-document.querySelectorAll('.lightBox__thumbnail').forEach(imagem => {
+imagens = document.querySelectorAll('.lightBox__thumbnail');
+imagens.forEach((imagem,index) => {
     imagem.addEventListener('click', e => {
         let link = e.target.src.replace(/\-thumbnail/, '');
         imagemBannerLightbox.src = link;
+        e.target.classList.add('active-image');
+        e.target.parentNode.classList.add('active-item');
+        imagens.forEach(imagem =>{
+            if(imagem != imagens[index]){
+                imagem.classList.remove('active-image');
+                imagem.parentNode.classList.remove('active-item');
+            }
+        })
+    
     });
 });
 ligthBoxSection = document.querySelector('#lightBox');
