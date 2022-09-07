@@ -2,6 +2,7 @@ balaoQuantidadeDeitens = document.getElementById('quantidadeItensCarrinho');
 mensagemVazio = document.getElementById('mensagemVazio');
 listaDeProdutos = document.getElementById('listaDeProdutos');
 
+
 class ProdutoCarrinho {
 
     constructor(nome, quantidade, preco, desconto, imagem, id) {
@@ -87,7 +88,7 @@ botaoAddCarrinho.addEventListener('click', event => {
         }
 
     }
-
+    document.getElementById('carrinho').classList.remove('oculto')
 })
 
 
