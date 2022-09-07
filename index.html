@@ -13,16 +13,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="assets/css/stylus.css">
   <title>Frontend Mentor | E-commerce product page</title>
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
 
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
@@ -43,10 +34,8 @@
         </div>
       </nav>
     </div>
-    
-
     <div class="cart-user-container">
-      <span class="cart-shopping"></span>
+      <span class="cart-shopping" id="carrinho-icon"></span>
       <div class="header__user"></div>
     </div>
   </header>
@@ -54,9 +43,10 @@
 
     <section class="produto">
       <div class="produto__banner">
+        <img class="produto__img" src="images/image-product-1.jpg" id="imagemBanner"  alt="">
         <div class="controles container">
-          <div class="controle controles__anterior"></div>
-          <div class="controle controles__proximo"></div>
+          <div class="controle controles__anterior" id="anterior"></div>
+          <div class="controle controles__proximo" id="proximo"></div>
         </div>
       </div>
       <ul class="produto__lista oculto-mobile">
@@ -89,7 +79,7 @@
       </div>
     </section>
     
-    <section class="carrinho">
+    <section class="carrinho oculto" id="carrinho">
       <h3 class="carrinho__titulo">Cart</h3>
       <hr>
       <div class="itens">
