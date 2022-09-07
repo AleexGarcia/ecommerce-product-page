@@ -55,6 +55,24 @@
         <li class="produto__item"><img src="images/image-product-3-thumbnail.jpg" alt="" class="produto__thumbnail"></li>
         <li class="produto__item"><img src="images/image-product-4-thumbnail.jpg" alt="" class="produto__thumbnail"></li>
       </ul>
+      <div class="lightBox ocultar-lightbox" id="lightBox">
+        <div class="lightBox__container">
+          <i class="fa-solid fa-xmark lightBox__close" id="close_lightbox"></i>
+          <div class="lightBox__banner">
+            <img class="lightBox__img" src="images/image-product-1.jpg" id="imagemBanner_lightBox"  alt="">
+            <div class="lightBox_controles container">
+              <div class="lightBox_controle controles__anterior" id="anterior_lightBox"></div>
+              <div class="lightBox_controle controles__proximo" id="proximo_lightBox"></div>
+            </div>
+          </div>
+          <ul class="lightBox__lista">
+            <li class="lightBox__item"><img src="images/image-product-1-thumbnail.jpg" alt="" class="lightBox__thumbnail"></li>
+            <li class="lightBox__item"><img src="images/image-product-2-thumbnail.jpg" alt="" class="lightBox__thumbnail"></li>
+            <li class="lightBox__item"><img src="images/image-product-3-thumbnail.jpg" alt="" class="lightBox__thumbnail"></li>
+            <li class="lightBox__item"><img src="images/image-product-4-thumbnail.jpg" alt="" class="lightBox__thumbnail"></li>
+          </ul>
+        </div>
+      </div>
     </section>
     <section class="descricao container">
       <h3 class="descricao__loja">Sneaker company</h3>
@@ -78,7 +96,6 @@
         </form>
       </div>
     </section>
-    
     <section class="carrinho oculto" id="carrinho">
       <h3 class="carrinho__titulo">Cart</h3>
       <hr>
@@ -96,6 +113,7 @@
   </footer>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/AdicionarCarrinho.js"></script>
+  <script src="assets/js/lightbox.js"></script>
 </body>
 
 </html>

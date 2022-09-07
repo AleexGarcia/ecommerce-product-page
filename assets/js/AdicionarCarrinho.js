@@ -127,6 +127,17 @@ function atualizaCarrinho(id, cart, posicao) {
         class="item__total">$${cart.produtos[posicao].precoFinal}</span></span>
     <button class="item__remove" id="remove"> </button>
     `
+    remove = document.getElementById('remove');
+    remove.addEventListener('click', e => {
+        let index = posicao;
+        let li = document.querySelector(`[data-id="${carrinho.produtos[index].id}"]`);
+        li.parentNode.removeChild(li);
+        carrinho.produtos.splice(index,1);
+        atualizaQuantidadeBalao();
+        mensagemVazio.classList.remove('oculto');
+        document.getElementById('checkout').classList.add('oculto');
+        balaoQuantidadeDeitens.classList.add('oculto');
+    })
 }
 
 function atualizaQuantidadeBalao() {

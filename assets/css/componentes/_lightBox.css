@@ -1,0 +1,77 @@
+.lightBox{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 110vh;
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.lightBox__close{
+    position: absolute;
+    top: -7.5%;
+    right: 1%;
+}
+.lightBox__close::before{
+
+    color: var(--orange);
+    font-size: 1.25rem;
+   
+}
+.lightBox__banner{
+  width: 100%;
+  height: 100%;
+}
+.lightBox__container{
+    width: 33vw;
+   height: 33vw;
+   position: relative;
+   top: 12.5%;
+}
+
+.lightBox_controles{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 45%;
+    height: 2.5rem;
+    width: 100%;
+    left: 5%;
+}
+.lightBox_controle{
+    background-color: var(--white);
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25%;
+}
+.lightBox__img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.lightBox__lista{
+    margin-top: 2rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+   justify-items: center;
+}
+.lightBox__item{
+    width: 66%;
+}
+.lightBox__thumbnail{
+    width: 100%;
+    
+    border-radius: 20px;
+}
+.ocultar-lightbox{
+    display: none;
+}

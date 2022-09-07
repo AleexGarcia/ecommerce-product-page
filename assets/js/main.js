@@ -23,10 +23,10 @@ document.getElementById('carrinho-icon').addEventListener('click', () => {
 var links = [];
 imagensProduto.forEach(imagem => {
 
-    links.push(imagem.currentSrc.replace(/\-thumbnail/, ''));
+    links.push(imagem.src.replace(/\-thumbnail/, ''));
 
     imagem.addEventListener('click', e => {
-        let link = e.srcElement.currentSrc.replace(/\-thumbnail/, '');
+        let link = e.target.src.replace(/\-thumbnail/, '');
         imagemBanner.src = link;
 
     });
