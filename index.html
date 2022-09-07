@@ -58,23 +58,23 @@
     </section>
     <section class="descricao container">
       <h3 class="descricao__loja">Sneaker company</h3>
-      <h2 class="descricao__produto">Fall Limeted Edition Sneakers</h2>
+      <h2 class="descricao__produto" id="nome">Fall Limeted Edition Sneakers</h2>
       <p class="descricao__caracteristicas">There low-profile sneakers are your perfect casual wear companion. Featuring
         a durable
         rubber outer sole, they'll withstand everything the weather can offer.</p>
       <div class="precos-container">
-        <span class="descricao__preco">$125.00</span>
+        <span class="descricao__preco" id="preco">$125.00</span>
         <span class="descricao__desconto">50%</span>
         <span class="descricao__precoAnterior">$250.00</span>
       </div>
       <div class="addcart">
         <form class="addcart__form" action="">
           <div class="input-control-container">
-            <span class="addcart__control minus"></span>
-            <input class="addcart__input" type="text" value="0">
-            <span class="addcart__control plus"></span>
+            <span class="addcart__control minus" data-control="-"></span>
+            <input class="addcart__input" type="number" id="quantidadeProduto" value="1" readonly>
+            <span class="addcart__control plus" data-control="+"></span>
           </div>
-          <button class="addcart__addButton" type="submit">Add to cart</button>
+          <button class="addcart__addButton" pattern="^\d+$" type="submit">Add to cart</button>
         </form>
       </div>
     </section>
@@ -102,6 +102,7 @@
     Coded by <a href="https://github.com/AleexGarcia">Alexandre Garcia</a>.
   </footer>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/AdicionarCarrinho.js"></script>
 </body>
 
 </html>

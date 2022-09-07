@@ -23,6 +23,10 @@
     font-size: 1rem;
     border-radius: 8px;
 }
+.addcart__input::-webkit-inner-spin-button,.addcart__input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
 .addcart__control{
     padding: 2rem;
     color:var(--orange);

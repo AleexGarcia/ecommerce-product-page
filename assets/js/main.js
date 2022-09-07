@@ -21,8 +21,8 @@ imagensProduto.forEach(imagem => {
 
     imagem.addEventListener('click', e => {
         let link = e.srcElement.currentSrc.replace(/\-thumbnail/,'');
-        console.log(link)
         imagemBanner.src = link;
+        
     });
 
 });
@@ -46,5 +46,13 @@ proximo.addEventListener('click', () =>{
             imagemBanner.src = links[novaPosicao];
             break;   
         }
+    }
+})
+quantidadeProduto = document.getElementById('quantidadeProduto')
+document.querySelector('.input-control-container').addEventListener('click',e =>{
+    if(e.target.dataset.control ==='+'){
+      quantidadeProduto.value = parseInt(quantidadeProduto.value) + 1;
+    }else if(e.target.dataset.control ==='-' && quantidadeProduto.value > 1){
+        quantidadeProduto.value = parseInt(quantidadeProduto.value) - 1;
     }
 })
