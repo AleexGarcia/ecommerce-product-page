@@ -59,6 +59,18 @@
 .invisivel-mobile{
     display: none;
 }
+
+.balaoQuantidade{
+    color: var(--white);
+    position: relative;
+    top: -33%;
+    left: 50%;
+    padding: 0px 6px;
+    font-size: 12px;
+    background-color: var(--orange);
+    border-radius: 50%;
+}
+
 @media screen and (min-width:1024px) {
     .invisivel-mobile{
         display: block;
