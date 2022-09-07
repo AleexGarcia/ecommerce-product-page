@@ -9,10 +9,10 @@ imagemBanner = document.getElementById('imagemBanner');
 
 
 menuIcon.addEventListener('click', () => {
-    navigation.classList.remove('oculto');
+    navigation.classList.remove('invisivel-mobile');
 })
 closeNavigation.addEventListener('click', () => {
-    navigation.classList.add('oculto');
+    navigation.classList.add('invisivel-mobile');
 })
 
 document.getElementById('carrinho-icon').addEventListener('click', () => {

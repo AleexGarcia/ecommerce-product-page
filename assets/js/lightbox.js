@@ -40,7 +40,6 @@ imagens.forEach((imagem,index) => {
 });
 ligthBoxSection = document.querySelector('#lightBox');
 document.querySelector('#close_lightbox').addEventListener('click',()=>{
-    console.log('clicado')
     ligthBoxSection.classList.add('ocultar-lightbox');
 })
 
